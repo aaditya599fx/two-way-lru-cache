@@ -18,7 +18,9 @@ and [dirty eviction](sim/lru-dirty-eviction.png) captures.
   the read word, echoes a written word, or returns zero on an error.
 - A rising edge with `mem_valid && mem_ready` completes a memory command.
   The test model uses 4 KiB and responds on the third eligible clock edge.
-  The cache decodes all 32 address bits.
+  It supports aligned word addresses from `0x00000000` through `0x00000FFC`;
+  an out-of-range memory command terminates the simulation. The cache itself
+  decodes all 32 address bits.
 - Reset is synchronous and invalidates the cache without flushing dirty
   lines. The behavioral backing memory preserves its contents.
 
