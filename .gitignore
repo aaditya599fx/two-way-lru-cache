@@ -1,3 +1,5 @@
 /build/
 /docs/*.aux
 /docs/*.log
+
+.DS_Store
