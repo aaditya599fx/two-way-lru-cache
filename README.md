@@ -41,4 +41,6 @@ and [dirty eviction](sim/lru-dirty-eviction.png) captures.
 | Ansh Sharma | LRU state and victim selection |
 | Anugrah | IEEE report, diagrams, and README |
 
-The prototype video link will be added when the video is available.
+## Phase I video
+
+[Watch the Phase I video on Google Drive](https://drive.google.com/file/d/1e6Uwf2_9PiLDKSvvyJBBiOG0WJrM6FKX/view?usp=sharing)
