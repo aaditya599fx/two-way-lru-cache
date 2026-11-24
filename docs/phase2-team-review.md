@@ -11,7 +11,7 @@ Each member should record the work they actually perform in their own commits.
 | Gauri Mishra | Shared controller and integration | Review INDEX_BITS parameterization, trace clean and dirty miss paths, explain latency |
 | Bhumi Rastogi | Address mapping and baseline storage | Verify both index/tag splits and storage counts, review direct_mapped_cache.v |
 | Ansh Sharma | LRU and workload analysis | Explain pair/triple traces, add and evaluate a personally chosen access pattern |
-| Anugrah | Report and reproducibility | Check reported values against CSV, review references, explain limitations and conclusion |
+| Anugra | Report and reproducibility | Check reported values against CSV, review references, explain limitations and conclusion |
 
 ## Review record
 

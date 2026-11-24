@@ -72,7 +72,7 @@ the [miss and hit](sim/cold-miss-hit.png) and
 | Gauri Mishra | Controller FSM, write policy, and top-level integration |
 | Bhumi Rastogi | Tag and data arrays and address decoding |
 | Ansh Sharma | LRU state and victim selection |
-| Anugrah | IEEE report, diagrams, and README |
+| Anugra | IEEE report, diagrams, and README |
 
 For Phase II review responsibilities and a place to record actual member work,
 see the [team review record](docs/phase2-team-review.md). This delivery uses

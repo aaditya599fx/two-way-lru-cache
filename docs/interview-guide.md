@@ -86,7 +86,7 @@ and set-local recency. Predict the outcomes for pair and triple conflicts
 before opening the CSV. Explain why two-way LRU can occasionally lose to
 direct mapping on an individual trace.
 
-## Anugrah
+## Anugra
 
 Explain the report's abstract, research context, methodology, results, and
 conclusion. Identify the distinction between measured values and analytical
