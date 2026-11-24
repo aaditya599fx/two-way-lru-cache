@@ -1,4 +1,4 @@
-module cache_controller(
+module cache_controller #(parameter INDEX_BITS = 4)(
     input  wire        clk, reset,
     input  wire        req_valid, req_write,
     input  wire [31:0] req_addr, req_wdata,
@@ -8,7 +8,7 @@ module cache_controller(
     output reg  [31:0] resp_rdata,
     input  wire        hit0, hit1, victim_way, victim_dirty,
     input  wire [31:0] hit_data, victim_data,
-    input  wire [25:0] victim_tag,
+    input  wire [29-INDEX_BITS:0] victim_tag,
     output reg  [31:0] lookup_addr,
     output wire        line_write, line_way, line_dirty, touch,
     output wire [31:0] line_data,
@@ -36,7 +36,7 @@ module cache_controller(
     assign line_data  = write_request ? request_data : mem_rdata;
     assign mem_valid  = !reset && (state == WRITEBACK || state == REFILL);
     assign mem_write  = state == WRITEBACK;
-    assign mem_addr   = mem_write ? {victim_tag, lookup_addr[5:2], 2'b00} :
+    assign mem_addr   = mem_write ? {victim_tag, lookup_addr[INDEX_BITS+1:2], 2'b00} :
                                      {lookup_addr[31:2], 2'b00};
     assign mem_wdata  = victim_data;
 
