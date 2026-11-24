@@ -135,7 +135,7 @@ def main():
         )
     (results_dir / "report-table.tex").write_text("\n".join(table) + "\n")
     with (results_dir / "benchmarks.csv").open("w", newline="") as stream:
-        writer = csv.DictWriter(stream, fieldnames=records[0].keys())
+        writer = csv.DictWriter(stream, fieldnames=records[0].keys(), lineterminator="\n")
         writer.writeheader()
         writer.writerows(records)
     (results_dir / "simulation.log").write_text("\n".join(logs))
