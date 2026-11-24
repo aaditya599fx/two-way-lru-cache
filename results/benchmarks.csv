@@ -1,0 +1,17 @@
+design,workload,accesses,hits,misses,writebacks,response_cycles,miss_rate,average_response_cycles
+direct_mapped,sequential_fit,2048,2016,32,0,2144,0.015625,1.046875
+direct_mapped,sequential_stream,2048,0,2048,0,8192,1.0,4.0
+direct_mapped,stride_16,2048,0,2048,0,8192,1.0,4.0
+direct_mapped,conflict_pair,2048,0,2048,0,8192,1.0,4.0
+direct_mapped,conflict_triple,2048,0,2048,0,8192,1.0,4.0
+direct_mapped,random_hot,2048,2024,24,0,2120,0.01171875,1.03515625
+direct_mapped,random_wide,2048,272,1776,0,7376,0.8671875,3.6015625
+direct_mapped,mixed_writes,2048,1020,1028,384,6284,0.50195312,3.06835938
+two_way_lru,sequential_fit,2048,2016,32,0,2144,0.015625,1.046875
+two_way_lru,sequential_stream,2048,0,2048,0,8192,1.0,4.0
+two_way_lru,stride_16,2048,0,2048,0,8192,1.0,4.0
+two_way_lru,conflict_pair,2048,2046,2,0,2054,0.00097656,1.00292969
+two_way_lru,conflict_triple,2048,0,2048,0,8192,1.0,4.0
+two_way_lru,random_hot,2048,2024,24,0,2120,0.01171875,1.03515625
+two_way_lru,random_wide,2048,271,1777,0,7379,0.86767578,3.60302734
+two_way_lru,mixed_writes,2048,1008,1040,383,6317,0.5078125,3.08447266

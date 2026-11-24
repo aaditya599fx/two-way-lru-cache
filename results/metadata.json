@@ -1,0 +1,9 @@
+{
+  "random_seed": 20261124,
+  "accesses_per_workload": 2048,
+  "workloads": 8,
+  "checked_transactions": 32768,
+  "timing": "Acceptance rising edge to response rising edge; excludes idle gaps",
+  "latency_formula": "1 + 3*miss + 3*dirty_writeback",
+  "simulator": "Icarus Verilog version 13.0 (stable) (v13_0)"
+}

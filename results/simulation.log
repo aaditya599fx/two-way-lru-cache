@@ -1,0 +1,63 @@
+direct_mapped/sequential_fit
+RESULT 2048 2016 32 0 2144
+tb/tb_workload.sv:97: $finish called at 62420000 (1ps)
+
+direct_mapped/sequential_stream
+RESULT 2048 0 2048 0 8192
+tb/tb_workload.sv:97: $finish called at 122900000 (1ps)
+
+direct_mapped/stride_16
+RESULT 2048 0 2048 0 8192
+tb/tb_workload.sv:97: $finish called at 122900000 (1ps)
+
+direct_mapped/conflict_pair
+RESULT 2048 0 2048 0 8192
+tb/tb_workload.sv:97: $finish called at 122900000 (1ps)
+
+direct_mapped/conflict_triple
+RESULT 2048 0 2048 0 8192
+tb/tb_workload.sv:97: $finish called at 122900000 (1ps)
+
+direct_mapped/random_hot
+RESULT 2048 2024 24 0 2120
+tb/tb_workload.sv:97: $finish called at 62180000 (1ps)
+
+direct_mapped/random_wide
+RESULT 2048 272 1776 0 7376
+tb/tb_workload.sv:97: $finish called at 114740000 (1ps)
+
+direct_mapped/mixed_writes
+RESULT 2048 1020 1028 384 6284
+tb/tb_workload.sv:97: $finish called at 103820000 (1ps)
+
+two_way_lru/sequential_fit
+RESULT 2048 2016 32 0 2144
+tb/tb_workload.sv:97: $finish called at 62420000 (1ps)
+
+two_way_lru/sequential_stream
+RESULT 2048 0 2048 0 8192
+tb/tb_workload.sv:97: $finish called at 122900000 (1ps)
+
+two_way_lru/stride_16
+RESULT 2048 0 2048 0 8192
+tb/tb_workload.sv:97: $finish called at 122900000 (1ps)
+
+two_way_lru/conflict_pair
+RESULT 2048 2046 2 0 2054
+tb/tb_workload.sv:97: $finish called at 61520000 (1ps)
+
+two_way_lru/conflict_triple
+RESULT 2048 0 2048 0 8192
+tb/tb_workload.sv:97: $finish called at 122900000 (1ps)
+
+two_way_lru/random_hot
+RESULT 2048 2024 24 0 2120
+tb/tb_workload.sv:97: $finish called at 62180000 (1ps)
+
+two_way_lru/random_wide
+RESULT 2048 271 1777 0 7379
+tb/tb_workload.sv:97: $finish called at 114770000 (1ps)
+
+two_way_lru/mixed_writes
+RESULT 2048 1008 1040 383 6317
+tb/tb_workload.sv:97: $finish called at 104150000 (1ps)
